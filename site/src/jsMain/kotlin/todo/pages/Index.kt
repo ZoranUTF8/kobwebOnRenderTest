@@ -97,7 +97,7 @@ fun HomePage() {
                 Modifier.fillMaxWidth().maxWidth(800.px).align(Alignment.CenterHorizontally),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                TodoForm("Type a TODO and press ENTER", loadingCount > 0) { todo ->
+                TodoForm("Type a TODO and press ENTER ", loadingCount > 0) { todo ->
                     coroutineScope.launch {
                         loadingCount++
                         window.api.post("add?owner=$id&todo=$todo")
