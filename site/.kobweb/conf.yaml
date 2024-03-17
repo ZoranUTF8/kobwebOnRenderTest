@@ -11,11 +11,11 @@ server:
       script: "build/dist/js/productionExecutable/todo.js"
       siteRoot: ".kobweb/site"
 
-#  cors:
-#    hosts:
-#      - name: "zochan.onrender.com"
-#        schemes:
-#          - "https"
+  cors:
+    hosts:
+      - name: "zochan.onrender.com"
+        schemes:
+          - "https"
 
   port: 8080
 
