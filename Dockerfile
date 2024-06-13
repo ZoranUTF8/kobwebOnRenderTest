@@ -63,4 +63,7 @@ ARG KOBWEB_APP_ROOT
 
 COPY --from=export /project/${KOBWEB_APP_ROOT}/.kobweb .kobweb
 
+# Expose port 8080
+EXPOSE 8080
+
 ENTRYPOINT .kobweb/server/start.sh
