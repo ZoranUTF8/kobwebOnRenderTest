@@ -13,7 +13,7 @@ server:
 
   cors:
     hosts:
-      - name: "zochan.onrender.com"
+      - name: "zoranjanjic.live"
         schemes:
           - "https"
 
